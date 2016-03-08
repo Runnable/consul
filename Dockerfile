@@ -3,7 +3,7 @@ MAINTAINER Bryan Kendall <bryan@runnable.com>
 
 EXPOSE 8300 8301 8301/udp 8302 8302/udp 8400 8500 53/udp
 
-ENV CONSUL_VERSION 0.5.2
+ENV CONSUL_VERSION 0.6.3
 ENV CONSUL_ZIP /tmp/consul.zip
 ENV CONSUL_UI_ZIP /tmp/ui.zip
 
