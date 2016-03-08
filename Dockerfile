@@ -13,8 +13,8 @@ RUN apt-get update && \
     unzip ${CONSUL_ZIP} -d /usr/local/bin && \
     rm ${CONSUL_ZIP} && \
     wget https://releases.hashicorp.com/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_web_ui.zip -q -O ${CONSUL_UI_ZIP} && \
-    unzip ${CONSUL_UI_ZIP} -d /tmp && \
-    mv /tmp/dist /ui && \
+    mkdir /ui && \
+    unzip ${CONSUL_UI_ZIP} -d /ui && \
     rm ${CONSUL_UI_ZIP}
 
 CMD ["/usr/local/bin/consul"]
